@@ -1,0 +1,120 @@
+1A: In Java, conditional operators are used to make decisions based on certain conditions. They evaluate expressions and return a boolean result (true or false). Java provides the following conditional operators:
+
+ Equality Operators:
+ == (Equal to): Compares two values for equality. It returns true if the values are equal; otherwise, it returns false.
+ != (Not equal to): Compares two values for inequality. It returns true if the values are not equal; otherwise, it returns false.
+
+ Relational Operators:
+ < (Less than): Checks if the left operand is less than the right operand. It returns true if the condition is true; otherwise, it returns false.
+ > (Greater than): Checks if the left operand is greater than the right operand. It returns true if the condition is true; otherwise, it returns false.
+ <= (Less than or equal to): Checks if the left operand is less than or equal to the right operand. It returns true if the condition is true; otherwise, it returns false.
+ >= (Greater than or equal to): Checks if the left operand is greater than or equal to the right operand. It returns true if the condition is true; otherwise, it returns false.
+
+ Logical Operators:
+ && (Logical AND): Checks if both the left and right operands are true. It returns true only if both conditions are true; otherwise, it returns false.
+ || (Logical OR): Checks if either the left or right operand is true. It returns true if at least one of the conditions is true; otherwise, it returns false.
+ ! (Logical NOT): Negates the boolean value of the operand. It returns true if the operand is false, and vice versa.
+These conditional operators are commonly used in if-else statements, loops, and other control flow structures to control the flow of the program based on specific conditions. They help in making decisions and performing actions accordingly.
+
+2A: Operators in Java can be categorized based on the number of operands they operate on. Here are the main types of operators:
+
+  Unary Operators: These operators operate on a single operand.
+  Plus (+): Represents the positive value of the operand.
+  Minus (-): Represents the negative value of the operand.
+  Increment (++) and Decrement (--): Increase or decrease the value of the operand by 1.
+  Logical NOT (!): Negates the boolean value of the operand.
+  Bitwise NOT (~): Flips the bits of the operand.
+  
+  Binary Operators: These operators operate on two operands.
+  Arithmetic Operators: Perform arithmetic operations.
+  Addition (+): Adds two operands.
+  Subtraction (-): Subtracts the second operand from the first.
+  Multiplication (*): Multiplies two operands.
+  Division (/): Divides the first operand by the second.
+  Modulus (%): Returns the remainder of the division.
+
+  Relational Operators: Compare two operands and return a boolean result.
+  Equal to (==): Checks if two operands are equal.
+  Not equal to (!=): Checks if two operands are not equal.
+  Greater than (>), Less than (<), Greater than or equal to (>=), Less than or equal to (<=): Compare the numerical values of two operands.
+  
+  Logical Operators: Perform logical operations on boolean operands.
+  Logical AND (&&): Returns true if both operands are true.
+  Logical OR (||): Returns true if at least one of the operands is true.
+  Logical XOR (^): Returns true if only one of the operands is true.
+
+  Bitwise Operators: Perform operations on individual bits of operands.
+  Bitwise AND (&): Performs a bitwise AND operation.
+  Bitwise OR (|): Performs a bitwise OR operation.
+  Bitwise XOR (^): Performs a bitwise XOR (exclusive OR) operation.
+
+  Bitwise Shift Operators (<<, >>, >>>): Perform left or right shifts of the bits.
+  Assignment Operators: Assign a value to a variable.
+  Simple Assignment (=): Assigns a value to a variable.
+  Compound Assignment (+=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=, >>>=): Combines an arithmetic or bitwise operation with assignment.
+  Ternary Operator (? :): A conditional operator that operates on three operands. It evaluates a condition and returns one of two possible values based on the result.
+ Ternary Operator: This is the only operator in Java that operates on three operands. It is known as the conditional operator (? :). It evaluates a condition and returns one of two possible values based on the result of the condition.
+ 
+3A: The switch case in java executes one statement from multiple ones. Thus, it is like an if-else-if ladder statement. It works with a lot of data types. The switch statement is used to test the equality of a variable against several values specified in the test cases
+
+4A: Conditional statements in Java are used to make decisions based on certain conditions. The most common conditional statements in Java are the If-Else statement, the Switch statement, and the Ternary Operator. These statements allow the program to execute different blocks of code based on specific conditions.
+
+5A: General syntax for if-else statement is: if (Condition) { Statement1; } else { Statement2; } 
+    In case of single statement within if and else block, curly braces can be omitted. 
+	
+6A: In Java, string.equals() method compares the two given strings based on the data/content of the string. If all the contents of both the strings are same then it returns true. If any character does not match, then it returns false.	
+
+7A: Mutable strings are those strings whose content can be changed without creating a new object. StringBuffer and StringBuilder are mutable versions of String in java, whereas the java String class is immutable. Immutable objects are those objects whose contents cannot be modified once created.
+
+8A: import java.util.Arrays;
+
+  public class StringSortExample {
+    public static void main(String[] args) {
+        String inputString = "openAI";
+        
+        // Convert the string to an array of characters
+        char[] charArray = inputString.toCharArray();
+        
+        // Sort the array in ascending order
+        Arrays.sort(charArray);
+        
+        // Convert the sorted array back to a string
+        String sortedString = new String(charArray);
+        
+        // Print the sorted string
+        System.out.println("Original String: " + inputString);
+        System.out.println("Sorted String: " + sortedString);
+    }
+  }
+
+
+9A: public class LetterCheckExample {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        boolean isPresent = false;
+        
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == 'e') {
+                isPresent = true;
+                break;
+            }
+        }
+        
+        if (isPresent) {
+            System.out.println("The letter 'e' is present in the word.");
+        } else {
+            System.out.println("The letter 'e' is not present in the word.");
+        }
+    }
+   }
+   
+10A: String pool is a storage space in the Java heap memory where string literals are stored. It is also known as String Constant Pool or String Intern Pool.   
+
+
+
+
+
+
+
+
+	
