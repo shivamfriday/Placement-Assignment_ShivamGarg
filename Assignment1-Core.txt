@@ -1,0 +1,82 @@
+1A. Compiler:A compiler is a software program that translates the entire source code of a program into machine code or an executable file before its execution.It takes the entire program as input, analyses the code structure, and generates the corresponding machine code or executable file. Examples of compiled programming languages are C, C++, Java.
+  Interpreter: An interpreter is a program that directly executes the source code line by line without prior compilation. It reads each line of the source code, interprets it, and executes the corresponding instructions.Instead of generating machine code, an interpreter translates and executes each statement or expression at runtime.Examples of python, javascript etc.
+  
+2A: JDK (Java Development Kit):
+    The JDK is a software development kit that provides tools, libraries, and documentation for developing Java applications.It includes the Java compiler (javac) to compile Java source code into bytecode, along with other tools like the debugger, profiler, and documentation generator.The JDK also includes development libraries and frameworks, such as the Java Standard Library and development APIs, that developers can utilize in their Java applications.In addition to development tools, the JDK also includes the JRE (Java Runtime Environment).
+    JRE (Java Runtime Environment):
+    The JRE is a runtime environment that is required to run Java applications and applets.It includes the Java Virtual Machine (JVM), core libraries, and other runtime components necessary for executing Java bytecode.The JRE does not contain development tools like the compiler or debugger, making it suitable for end-users who only need to run Java applications.
+   JVM (Java Virtual Machine):
+   The JVM is a virtual machine that executes Java bytecode.It is an implementation of the Java Virtual Machine Specification and provides an environment for running Java applications.The JVM is responsible for interpreting or just-in-time (JIT) compiling Java bytecode into machine code that can be executed by the underlying hardware.  
+   
+3A: Types of memory:
+     1.Class(Method) Area
+     2.Heap
+     3.Stack
+     4.Program Counter Register
+     5.Native Method Stack   
+
+4A:  JIT stands for "Just-In-Time." In the context of programming languages, a JIT compiler, also known as a dynamic translator or runtime compiler, is a component of the Java Virtual Machine (JVM) that dynamically compiles bytecode into native machine code during runtime, on the fly, just before it is executed.
+
+5A: In Java, access specifiers are keywords that determine the visibility and accessibility of classes, variables, methods, and constructors. There are four access specifiers in Java:
+  1. public - Accessible from anywhere
+  2. private - Accessible within the same class only
+  3. protected - Accessible within the same package and subclasses
+  4. default - Accessible within the same package only
+  
+6A: In Java, a compiler is a software tool that translates Java source code, written by developers in human-readable form, into a lower-level representation called bytecode. The Java compiler is responsible for converting the Java source code (.java files) into bytecode (.class files) that can be executed by the Java Virtual Machine (JVM).
+
+7A: In Java, variables are used to store data and represent values in memory. Java has several types of variables based on their scope and lifetime. The main types of variables in Java are as follows:
+
+   1.Local Variables: Local variables are declared within a method, constructor, or a block of code and have a limited scope. They are visible only within the block where they are declared and exist only as long as the block is executing. Local variables must be initialized before they are used.
+
+   2.Instance Variables: Instance variables, also known as member variables or fields, are declared within a class but outside any method or block. They are associated with specific instances or objects of the class. Each instance of the class has its own copy of instance variables. Instance variables are initialized with default values if not explicitly initialized.
+
+   3.Static Variables (Class Variables): Static variables are declared with the static keyword within a class but outside any method or block. They are associated with the class itself rather than with specific instances of the class. Static variables are shared among all instances of the class, and changes made to them affect all instances. Static variables are initialized with default values if not explicitly initialized.
+
+   4.Parameter Variables: Parameter variables are used to pass values to methods or constructors. They are declared within the method or constructor signature and have local scope within that method or constructor. Parameter variables are initialized with the values passed during method or constructor invocation.
+
+   5.Class Constants: Class constants are declared as static final variables within a class. They represent fixed values that should not be modified. Class constants are typically used to define values that are shared across the class and should not be changed.
+
+   6. Array Variables: Array variables are used to store arrays, which are ordered collections of elements of the same type. Array variables can be local variables, instance variables, or static variables.  
+ 
+8A: Java provides several built-in data types to represent different kinds of values. The main data types in Java can be categorized as follows:
+
+   Primitive Data Types:
+   boolean: Represents a boolean value of either true or false.
+   byte: Represents a signed 8-bit integer value.
+   short: Represents a signed 16-bit integer value.
+   int: Represents a signed 32-bit integer value.
+   long: Represents a signed 64-bit integer value.
+   float: Represents a single-precision 32-bit floating-point value.
+   double: Represents a double-precision 64-bit floating-point value.
+   char: Represents a single Unicode character.
+   
+   Reference Data Types:
+   String: Represents a sequence of characters.
+   Arrays: Represents ordered collections of elements of the same type.
+   Classes and Objects: Represents user-defined data types and their instances.
+
+   Other Built-in Data Types:
+   Enumerations (enums): Represents a set of predefined constants.
+   Wrapper Classes: Provides a way to treat primitive data types as objects. (e.g., Integer, Double, Character) 
+
+9A: In Java, identifiers are names used to identify various elements in a program, such as classes, variables, methods, packages, and interfaces. An identifier is a sequence of characters that follows certain rules and conventions
+
+10A: The Java Virtual Machine (JVM) is a crucial component of the Java platform. It is responsible for executing Java bytecode, which is the compiled form of Java source code. The architecture of the JVM can be divided into three main components:
+
+Class Loader Subsystem:
+Class Loader: The Class Loader subsystem is responsible for loading Java class files into memory. It loads classes on-demand as they are referenced by the running program.
+Class Structure: The Class Loader reads the class files and creates the internal representation of classes in the JVM. It verifies the bytecode for correctness and security.
+
+Runtime Data Areas: The Class Loader subsystem creates and manages runtime data areas required for class execution, such as method area, heap, constant pool, etc.
+Runtime Data Areas:
+Method Area: It stores class-level data, including the bytecode, field and method information, and constant pool.
+Heap: The Heap is the runtime data area where objects are allocated. It is a shared memory area used by all threads.
+Stack: Each thread in the JVM has its own stack, which is used to store method invocations, local variables, and intermediate results.
+Program Counter (PC) Register: It keeps track of the current executing instruction in each thread.
+Native Method Stack: It is used for executing native methods or methods written in other programming languages.
+
+Execution Engine:
+Just-In-Time (JIT) Compiler: The JIT compiler is responsible for optimizing and compiling the bytecode into native machine code at runtime. It dynamically identifies frequently executed portions of the bytecode and translates them into efficient native code for better performance.
+Interpreter: The Interpreter executes the bytecode instruction by instruction. It interprets and executes the bytecode line by line, which is slower than native code execution but allows for portability and dynamic optimizations.
+Garbage Collector (GC): The Garbage Collector is responsible for automatic memory management. It identifies and collects objects that are no longer reachable, freeing up memory for future allocations.
