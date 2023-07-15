@@ -1,0 +1,8 @@
+No, Java is not considered a 100% Object-Oriented Programming (OOP) language. 
+While Java is primarily designed to support OOP concepts, it does have certain elements 
+that deviate from pure OOP principles. Here are a few reasons why Java is not considered 100% pure OOP:
+
+Primitive Data Types: Java includes primitive data types such as int, 
+float, boolean, etc., which are not objects. These primitive types 
+do not have associated methods or inheritance hierarchy like objects do. However, 
+Java provides wrapper classes (e.g., Integer, Float, Boolean) to represent these primitives as objects.
