@@ -1,0 +1,5 @@
+Lambda expressions improve code readability and do not require interpretation.
+Lambdas allow you to write concise code.
+It encourages the use of functional programming.
+It simplifies variable scope and encourages code reusability.
+Lambdas allow you to use parallel processing.
