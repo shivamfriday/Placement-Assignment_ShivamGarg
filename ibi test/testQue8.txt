@@ -1,0 +1,11 @@
+The first line console.log(1) will be executed immediately.
+
+The second line setTimeout(function(){console.log(2)}, 1000) sets up a timer for 1000 milliseconds and run after this time.
+
+The third line setTimeout(function(){console.log(3)}, 0) also sets up a timer, but with a delay of 0 milliseconds.
+
+The fourth line console.log(4) will be executed immediately after the third line,  4 will be printed to the console.
+
+The callback for setTimeout(function(){console.log(3)}, 0) will be executed next,  3 will be printed to the console.
+
+Finally, after waiting for 1 second, 3rd line function will be executed, logging 2 to the console.

@@ -1,0 +1,11 @@
+array 1: length=5 last=j,o,n,e,s
+
+array 2: length=5 last=j,o,n,e,s
+
+arr1 we are spliting 
+
+arr2 we are reversing the array 
+
+and arr3 again we are spliting and then pushing to array 2.
+
+arr1 and arr2 are referencing the same array in memory, so any changes made to one will affect the other.

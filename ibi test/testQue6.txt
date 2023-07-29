@@ -1,0 +1,35 @@
+asyncFunc1(function(result1) {
+    asyncFunc2(result1, function(result2) {
+        asyncFunc3(result2, function(result3) {
+            // More nested callbacks...
+        });
+    });
+})
+
+//Example 2
+
+function onResult1(result1) {
+    asyncFunc2(result1, onResult2);
+}
+
+function onResult2(result2) {
+    asyncFunc3(result2, onResult3);
+}
+
+function onResult3(result3) {
+    // Handle the final result here.
+}
+
+asyncFunc1(onResult1);
+
+//Example 3 
+
+asyncFunc1()
+    .then(result1 => asyncFunc2(result1))
+    .then(result2 => asyncFunc3(result2))
+    .then(result3 => {
+        // Handle the final result here.
+    })
+    .catch(error => {
+        // Handle errors.
+    });

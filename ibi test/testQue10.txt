@@ -1,0 +1,18 @@
+1
+4
+2
+3
+
+
+console.log(1) execute immediately.
+
+setTimeout(printNumber, 0, 2) call is  run immediately with an argument 2 with the timeout of 0 second.
+
+setTimeout(printNumber, 100, 3) call is  to run after 100 milliseconds with an argument 3.
+
+ console.log(4) statement is executed.
+
+setTimeout callback, which was scheduled with a delay of 0 milliseconds will execute.
+
+After a 100-millisecond delay the second setTimeout callback will be executed.
+
